@@ -15,7 +15,10 @@ root = CTk()
 
 root.state('zoomed')
 root.config(background="white")
+root.geometry("1375x750+20+15")
 
+root.minsize(width=1375, height=750)
+root.maxsize(width=1375, height=750)
 
 try:
     root.iconphoto(False,ImageTk.PhotoImage(file='images/teacher.png'))
@@ -55,7 +58,7 @@ class login:
         def login_():
             userID = entr_user_id.get()
             passwd = entr_psswrd.get()
-            if userID == "LKEA@ratlam" and passwd == "232001":
+            if userID == "myschool" and passwd == "123456":
                 data = store_data()
                 data.create_file()
                 home_caller = window()
@@ -134,10 +137,10 @@ class window:
         except:
             None
 
-        schl_name1 = CTkLabel(frm, text="LORD KRISHNA", font=("Cooper Black",45),text_color="red",fg_color='#f7ca3f')
+        schl_name1 = CTkLabel(frm, text="Welcome TO", font=("Cooper Black",45),text_color="red",fg_color='#f7ca3f')
         schl_name1.place(x=860,y=70)
 
-        schl_name2 = CTkLabel(frm, text="ENGLISH ACADEMY", font=("Cooper Black",35),text_color="red",fg_color="#f7ca3f")
+        schl_name2 = CTkLabel(frm, text="School Dashboard", font=("Cooper Black",35),text_color="red",fg_color="#f7ca3f")
         schl_name2.place(x=860,y=120)
 
         add_btn = CTkButton(frm,text="Add Student",font=("Bahnschrift SemiBold",22),height=50,width=180,fg_color="#17133b",bg_color='#f7ca3f',text_color="white",command=add_Data)
@@ -769,7 +772,7 @@ class display:
         except:
             None
 
-        schl_name = CTkLabel(frm, text="LORD KRISHNA ENGLISH ACADEMY", font=("Cooper Black",45),text_color="red",fg_color="white")
+        schl_name = CTkLabel(frm, text="Your Student's Data", font=("Cooper Black",45),text_color="red",fg_color="white")
         schl_name.place(x=300,y=20)
 
 

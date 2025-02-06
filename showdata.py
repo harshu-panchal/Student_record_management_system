@@ -21,7 +21,7 @@ class page:
         lg_img = CTkLabel(frm,text="", image=logo_img, fg_color="white")
         lg_img.place(x=210,y=5)
 
-        schl_name = CTkLabel(frm, text="LORD KRISHNA ENGLISH ACADEMY", font=("Cooper Black",45),text_color="red",fg_color="white")
+        schl_name = CTkLabel(frm, text="Your Student's Data", font=("Cooper Black",45),text_color="red",fg_color="white")
         schl_name.place(x=300,y=20)
 
 
